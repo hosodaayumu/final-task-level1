@@ -140,11 +140,14 @@
                                         class="text-danger">*</span></label>
                                 <select class="form-select" id="animeSelect" required>
                                     <option value="" disabled selected hidden>作品を選択してください</option>
-                                    <option value="1">異世界の勇者 ～運命の旅路～</option>
-                                    <option value="2">桜色の約束</option>
-                                    <option value="3">量子戦士クロノス</option>
-                                    <option value="4">魔法学園の日常</option>
-                                    <option value="5">竜騎士の伝説</option>
+                                    <option value="1">Five Nights at Freddy's</option>
+                                    <option value="2">Five Nights at Freddy's 2</option>
+                                    <option value="3">Five Nights at Freddy's 3</option>
+                                    <option value="4">Five Nights at Freddy's 4</option>
+                                    <option value="6">都市伝説解体センター</option>
+                                    <option value="7">Ib イブ</option>
+                                    <option value="8">UNDERTALE</option>
+                                    <option value="9">DELTARUNE</option>
                                 </select>
                                 <small class="text-danger d-none" id="animeError">作品を選択してください</small>
                             </div>
@@ -153,7 +156,7 @@
                             <div class="mb-3">
                                 <label for="postTitle" class="form-label fw-bold">タイトル <span
                                         class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="postTitle" placeholder="例: 第8話の展開が神すぎた!"
+                                <input type="text" class="form-control" id="postTitle" placeholder="例: ○○で遊んでみた感想"
                                     required>
                                 <small class="text-danger d-none" id="titleError">タイトルは30文字以内で入力してください</small>
                             </div>
@@ -195,7 +198,7 @@
                             <div class="mb-3">
                                 <label for="tagInput" class="form-label fw-bold">タグ（任意）</label>
                                 <input type="text" class="form-control" id="tagInput"
-                                    placeholder="例: 感動, バトルシーン, キャラクター">
+                                    placeholder="例: アクション, 謎解き, ホラー">
                                 <div class="form-text">カンマ区切りで複数のタグを入力できます</div>
                             </div>
 
@@ -323,7 +326,7 @@
                             <div class="col-md-4">
                                 <select class="form-select form-select-sm">
                                     <option>すべての作品</option>
-                                    <option>視聴中の作品のみ</option>
+                                    <option>プレイ中の作品のみ</option>
                                 </select>
                             </div>
                             <div class="col-md-4">
@@ -357,29 +360,39 @@
                             <div class="flex-grow-1">
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div>
-                                        <h6 class="mb-1 fw-bold">アニメ大好きさん</h6>
+                                        <h6 class="mb-1 fw-bold">ホラーゲーム好き</h6>
                                         <small class="text-muted">
                                             <i class="bi bi-clock"></i> 5分前
-                                            <span class="badge bg-primary ms-2">感想</span>
+                                            <span class="badge bg-primary ms-2">レビュー</span>
                                         </small>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <h5 class="card-title fw-bold mb-2">
-                            <a href="#" class="text-decoration-none text-dark">第8話の展開が神すぎた!</a>
+                            <a href="#" class="text-decoration-none text-dark">
+                                時系列で振り返るFNaFシリーズの魅力
+                            </a>
                         </h5>
+
                         <p class="text-muted small mb-2">
-                            <i class="bi bi-film"></i> 異世界の勇者 ～運命の旅路～
+                            <i class="bi bi-film"></i> FNaFシリーズ
                         </p>
+
                         <p class="card-text">
-                            今週の第8話、まさかあの展開になるとは思いませんでした!特にラストシーンは鳥肌モノでしたね。来週がもう待ちきれません...
+                            ジャンプスケアだけでなく、断片的に語られるストーリーを
+                            自分なりに整理しながら進めていく点が印象的なホラーゲーム。
+                            作品ごとに少しずつ明かされる時系列と設定が、
+                            プレイヤーの考察意欲を強く刺激してくれます。
                         </p>
+
                         <div class="d-flex gap-2 mb-3">
-                            <span class="badge bg-info">#感動</span>
-                            <span class="badge bg-info">#神回</span>
-                            <span class="badge bg-info">#続き気になる</span>
+                            <!-- <span class="badge bg-info">#感動</span> -->
+                            <!-- <span class="badge bg-info">#神回</span> -->
+                            <span class="badge bg-info">#ホラーゲーム</span>
                         </div>
+
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="d-flex gap-3">
                                 <button class="btn btn-sm btn-outline-primary">
@@ -398,6 +411,7 @@
                         </div>
                     </div>
                 </div>
+
 
                 <!-- 投稿カード2 -->
                 <div class="card post-card mb-3">
@@ -408,30 +422,40 @@
                             <div class="flex-grow-1">
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div>
-                                        <h6 class="mb-1 fw-bold">考察マスター</h6>
+                                        <h6 class="mb-1 fw-bold">ゲームレビュアー</h6>
                                         <small class="text-muted">
                                             <i class="bi bi-clock"></i> 1時間前
-                                            <span class="badge bg-warning text-dark ms-2">考察</span>
-                                            <span class="badge bg-danger ms-1">ネタバレ注意</span>
+                                            <span class="badge bg-warning text-dark ms-2">レビュー</span>
+                                            <span class="badge bg-danger ms-1">軽度ネタバレ</span>
                                         </small>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <h5 class="card-title fw-bold mb-2">
-                            <a href="#" class="text-decoration-none text-dark">魔王の真の目的について【考察】</a>
+                            <a href="#" class="text-decoration-none text-dark">
+                                都市伝説解体センターを遊んでみた感想【レビュー】
+                            </a>
                         </h5>
+
                         <p class="text-muted small mb-2">
-                            <i class="bi bi-film"></i> 異世界の勇者 ～運命の旅路～
+                            <i class="bi bi-film"></i> 都市伝説解体センター
                         </p>
+
                         <p class="card-text">
-                            これまでの描写から、魔王ゼノンの真の目的は世界征服ではなく、別の何かを求めているのではないでしょうか。第7話での賢者との会話シーンが重要な伏線だと思います...
+                            本作は、都市伝説をテーマにしたミステリーアドベンチャーゲームです。
+                            調査と推理を繰り返すゲーム性が特徴で、物語を読み進めるだけでなく、
+                            プレイヤー自身が考える楽しさがあります。
+                            テンポも良く、ミステリー系が好きな人には特におすすめできる一作です。
                         </p>
+
                         <div class="d-flex gap-2 mb-3">
-                            <span class="badge bg-info">#考察</span>
-                            <span class="badge bg-info">#伏線回収</span>
-                            <span class="badge bg-info">#魔王</span>
+                            <span class="badge bg-info">#ゲームレビュー</span>
+                            <span class="badge bg-info">#ADV</span>
+                            <span class="badge bg-info">#ミステリー</span>
                         </div>
+
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="d-flex gap-3">
                                 <button class="btn btn-sm btn-outline-primary">
@@ -451,55 +475,66 @@
                     </div>
                 </div>
 
+
                 <!-- 投稿カード3 -->
                 <div class="card post-card mb-3">
-                    <div class="card-body">
-                        <div class="d-flex mb-3">
-                            <img src="https://placehold.co/50x50/10b981/ffffff?text=U3" class="user-avatar me-3"
-                                alt="ユーザー">
-                            <div class="flex-grow-1">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <div>
-                                        <h6 class="mb-1 fw-bold">アニメ初心者</h6>
-                                        <small class="text-muted">
-                                            <i class="bi bi-clock"></i> 3時間前
-                                            <span class="badge bg-success ms-2">質問</span>
-                                        </small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <h5 class="card-title fw-bold mb-2">
-                            <a href="#" class="text-decoration-none text-dark">エリナとルナ、どちらが人気ですか?</a>
-                        </h5>
-                        <p class="text-muted small mb-2">
-                            <i class="bi bi-film"></i> 異世界の勇者 ～運命の旅路～
-                        </p>
-                        <p class="card-text">
-                            最近この作品を見始めたのですが、ヒロインが魅力的で選べません!みなさんはエリナとルナ、どちらが好きですか?それぞれの魅力を教えてください。
-                        </p>
-                        <div class="d-flex gap-2 mb-3">
-                            <span class="badge bg-info">#ヒロイン</span>
-                            <span class="badge bg-info">#キャラクター</span>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="d-flex gap-3">
-                                <button class="btn btn-sm btn-outline-primary">
-                                    <i class="bi bi-hand-thumbs-up"></i>
-                                    <span class="d-none d-sm-inline"> いいね (45)</span>
-                                </button>
-                                <button class="btn btn-sm btn-outline-secondary">
-                                    <i class="bi bi-chat"></i>
-                                    <span class="d-none d-sm-inline"> コメント (12)</span>
-                                </button>
-                                <button class="btn btn-sm btn-outline-info">
-                                    <i class="bi bi-share"></i>
-                                    <span class="d-none d-sm-inline"> シェア</span>
-                                </button>
-                            </div>
-                        </div>
+    <div class="card-body">
+        <div class="d-flex mb-3">
+            <img src="https://placehold.co/50x50/10b981/ffffff?text=U3" class="user-avatar me-3"
+                alt="ユーザー">
+            <div class="flex-grow-1">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                        <h6 class="mb-1 fw-bold">ホラーゲーム初心者</h6>
+                        <small class="text-muted">
+                            <i class="bi bi-clock"></i> 3時間前
+                            <span class="badge bg-success ms-2">質問</span>
+                        </small>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <h5 class="card-title fw-bold mb-2">
+            <a href="#" class="text-decoration-none text-dark">
+                ギャリーとメアリー、どちらが人気ですか?
+            </a>
+        </h5>
+
+        <p class="text-muted small mb-2">
+            <i class="bi bi-film"></i> Ib（イヴ）
+        </p>
+
+        <p class="card-text">
+            最近Ibを遊び始めたのですが、登場キャラクターがとても印象的で迷っています。
+            ギャリーとメアリーでは、どちらが人気なのでしょうか？
+            それぞれの魅力や好きなポイントを教えてもらえるとうれしいです。
+        </p>
+
+        <div class="d-flex gap-2 mb-3">
+            <span class="badge bg-info">#Ib</span>
+            <span class="badge bg-info">#キャラクター</span>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex gap-3">
+                <button class="btn btn-sm btn-outline-primary">
+                    <i class="bi bi-hand-thumbs-up"></i>
+                    <span class="d-none d-sm-inline"> いいね (45)</span>
+                </button>
+                <button class="btn btn-sm btn-outline-secondary">
+                    <i class="bi bi-chat"></i>
+                    <span class="d-none d-sm-inline"> コメント (12)</span>
+                </button>
+                <button class="btn btn-sm btn-outline-info">
+                    <i class="bi bi-share"></i>
+                    <span class="d-none d-sm-inline"> シェア</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
                 <!-- ページネーション -->
                 <nav aria-label="投稿ページネーション">
@@ -531,8 +566,8 @@
                             <li class="list-group-item px-0">
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div>
-                                        <h6 class="mb-1">第8話の伏線がすごい</h6>
-                                        <small class="text-muted">異世界の勇者</small>
+                                        <h6 class="mb-1">伏線がすごい</h6>
+                                        <small class="text-muted">Five Nights at Freddy's</small>
                                     </div>
                                     <span class="badge bg-primary">234</span>
                                 </div>
@@ -540,8 +575,8 @@
                             <li class="list-group-item px-0">
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div>
-                                        <h6 class="mb-1">EDの歌詞の意味を考察</h6>
-                                        <small class="text-muted">桜色の約束</small>
+                                        <h6 class="mb-1">都市伝説解体センターを考察</h6>
+                                        <small class="text-muted">都市伝説解体センター</small>
                                     </div>
                                     <span class="badge bg-primary">189</span>
                                 </div>
@@ -549,7 +584,7 @@
                             <li class="list-group-item px-0">
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div>
-                                        <h6 class="mb-1">キャラクター人気投票</h6>
+                                        <h6 class="mb-1">人気投票</h6>
                                         <small class="text-muted">全作品</small>
                                     </div>
                                     <span class="badge bg-primary">567</span>
@@ -559,7 +594,7 @@
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div>
                                         <h6 class="mb-1">おすすめの類似作品</h6>
-                                        <small class="text-muted">魔法学園の日常</small>
+                                        <small class="text-muted">xxxxxxxx</small>
                                     </div>
                                     <span class="badge bg-primary">123</span>
                                 </div>
@@ -580,7 +615,7 @@
                                     <img src="https://placehold.co/30x30/6366f1/ffffff?text=U1"
                                         class="user-avatar-small me-2" alt="ユーザー">
                                     <div>
-                                        <h6 class="mb-0 small">アニメ大好きさん</h6>
+                                        <h6 class="mb-0 small">ゲーム大好きさん</h6>
                                         <small class="text-muted">オンライン</small>
                                     </div>
                                 </div>
@@ -600,7 +635,7 @@
                                     <img src="https://placehold.co/30x30/10b981/ffffff?text=U3"
                                         class="user-avatar-small me-2" alt="ユーザー">
                                     <div>
-                                        <h6 class="mb-0 small">週末アニメ視聴者</h6>
+                                        <h6 class="mb-0 small">ドラえもそ</h6>
                                         <small class="text-muted">5分前</small>
                                     </div>
                                 </div>
@@ -610,7 +645,7 @@
                                     <img src="https://placehold.co/30x30/8b5cf6/ffffff?text=U4"
                                         class="user-avatar-small me-2" alt="ユーザー">
                                     <div>
-                                        <h6 class="mb-0 small">深夜アニメファン</h6>
+                                        <h6 class="mb-0 small">ホラーゲームファン</h6>
                                         <small class="text-muted">10分前</small>
                                     </div>
                                 </div>
@@ -717,7 +752,7 @@
             <div class="row">
                 <div class="col-md-4 mb-3">
                     <h5 class="fw-bold mb-3"><i class="bi bi-film"></i> AniListo</h5>
-                    <p class="text-light">あなたの好きなアニメを見つけて、共有しよう。</p>
+                    <p class="text-light">あなたの好きなゲームを見つけて、共有しよう。</p>
                 </div>
                 <div class="col-md-2 mb-3">
                     <h6 class="fw-bold mb-3">サイト情報</h6>
@@ -763,7 +798,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="guide-content-step mb-3">
-                        <h6 class="fw-bold text-primary">STEP 1: アニメを探す</h6>
+                        <h6 class="fw-bold text-primary">STEP 1: ゲームを探す</h6>
                         <p class="small text-muted">検索バーやランキング、ジャンル別一覧から気になる作品を見つけましょう。</p>
                     </div>
                     <hr>
@@ -774,7 +809,7 @@
                     <hr>
                     <div class="guide-content-step">
                         <h6 class="fw-bold text-primary">STEP 3: マイリストに保存</h6>
-                        <p class="small text-muted">観たい作品や視聴済みの作品をマイリストで管理して、自分だけのアニメ年表を作ろう！</p>
+                        <p class="small text-muted">観たい作品や視聴済みの作品をマイリストで管理して、自分だけのゲーム表を作ろう！</p>
                     </div>
                 </div>
                 <div class="modal-footer">
